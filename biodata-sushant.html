@@ -1,0 +1,159 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>revision</title>
+</head>
+<style>
+                      /* **heading** */
+    .transition{
+        font-size: 55px;
+        width: 170px;
+        height: 60px;
+        border:6px solid rgb(60,8,60);
+        border-radius: 5px;
+        transition: 200ms;
+        margin: auto;
+        margin-bottom: 10px;
+        text-shadow: 9px 9px 10px;
+        
+    }
+    .transition:hover{
+        width: 470px;
+        height: 70px;
+        border:6px solid rgb(84, 8, 107);
+        margin-bottom: 0px;
+    }
+    .cursor {
+        cursor: pointer;
+    }
+
+    .navbar {
+        border: 2px solid rgb(84, 8, 107);
+        margin-bottom: 10px;
+    }
+
+    .first-box {
+        background-color:  rgb(60,8,60);;
+        border: 2px solid rgb(84, 8, 107);
+        border-radius: 14px;
+        padding: 2px;
+        margin: 25px;
+        display: inline;
+        transition: 1s;
+    }
+
+    #second-box {
+        background-color:  rgb(60,8,60);;
+        border: 2px solid rgb(84, 8, 107);
+        border-radius: 14px;
+        padding: 2px;
+        display: inline;
+        transition: 1s;
+    }
+
+    #dropdown {
+        display: none;
+        position: absolute;
+        left: 236px;
+        top: 59px;
+        border: 2px solid rgb(60, 8, 60);
+        border-bottom-left-radius: 14px;
+        border-bottom-right-radius: 14px;
+        background-color: rgb(84, 8, 107);
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-top: 40px;
+    }
+
+    #profile-image{
+        
+        width: 100px;
+        border:6px solid rgb(60, 8, 60) ;
+        display: block;
+        margin: auto;
+        border-radius:20px;
+        transition: .5s;
+        /* box-shadow: 20px 118px 47px -19px; */
+
+    }
+    #profile-image:hover{
+        border:6px solid rgb(84, 8, 107) ;
+    }
+
+    .class {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 10px;
+        font-size: 25px;
+    }
+
+    .font {
+        font-size: 25px;
+    }
+
+    .first-box:hover {
+        background-color: rgb(84, 8, 107);
+    }
+
+    .second-box:hover {
+        background-color: rgb(84, 8, 107);
+    }
+</style>
+
+<body style="background-color: rgb(60, 8, 60)">
+    <div class="transition"  onmouseenter="messageshow()" onmouseleave="messagehide()">
+        sushant
+        <i style="display: none;">
+            the legend
+        </i>
+    </div>
+    <div class="navbar font">
+        <div id="first-box" class="first-box cursor">great sushant</div>
+        <div id="second-box" class="second-box cursor" onmouseover="show()" onmouseleave="hide()">
+            second
+        </div>
+    </div>
+    <div id="dropdown" class="font cursor" onmouseover="show()" onmouseleave="hide()">
+        <div>name</div>
+        <div>class</div>
+        <div>state</div>
+    </div>
+    <img id="profile-image" class="cursor" src="busphoto.jpeg" alt="internet isssue">
+    <footer style="margin-top: 10px;">
+        <div class="class">
+            <div>|||||||</div>
+            <div>kendriya vidyalaya(1-12)</div>
+            <div>|||||||</div>
+        </div>
+        <div class="class">
+            <div>|||||||</div>
+            <div>indraprastha university(under graduate)</div>
+            <div>|||||||</div>
+        </div>
+        <div class="class">
+            <div>|||||||</div>
+            <div>bechelors in computer science</div>
+            <div>|||||||</div>
+        </div>
+        <div class="class">
+            <div>|||||||</div>
+            <div>full stack web developer</div>
+            <div>|||||||</div>
+        </div>
+        <div class="class">
+            <div>|||||||</div>
+            <div>persuing application development</div>
+            <div>|||||||</div>
+        </div>
+        <div class="class">
+            <div>|||||||</div>
+            <div>aspiring to clear upsc</div>
+            <div>|||||||</div>
+        </div>
+    </footer>
+</body>
+<script src="javafile.js">
+</script>
+</html>
